@@ -1,5 +1,6 @@
 import Foundation
 import Yaml
+import SwiftyJSON
 
 public enum ConfigurationParserError: Error {
     case invalidYamlFile, noRuleDefined, ruleTypeMissing, unknownRuleType, ruleParsingError(errorInfo: String), noAdapterDefined, adapterIDMissing, adapterTypeMissing, adapterTypeUnknown, adapterParsingError(errorInfo: String)
@@ -16,7 +17,10 @@ open class Configuration {
     public init() {}
 
     open func load(fromConfigString configString: String) throws {
-        let config = try Yaml.load(configString)
+        
+        
+        
+        let config = JSON(parseJSON: configString)
         loadConfig(config)
         adapterFactoryManager = try AdapterFactoryParser.parseAdapterFactoryManager(config["adapter"])
         ruleManager = try RuleParser.parseRuleManager(config["rule"], adapterFactoryManager: adapterFactoryManager)
@@ -27,7 +31,7 @@ open class Configuration {
         try load(fromConfigString: configString)
     }
 
-    func loadConfig(_ config: Yaml) {
+    func loadConfig(_ config: JSON) {
         if let port = config["port"].int {
             proxyPort = port
         }
@@ -35,7 +39,7 @@ open class Configuration {
 
 }
 
-extension Yaml {
+extension JSON {
     var stringOrIntString: Swift.String? {
         return string ?? int?.description
     }
