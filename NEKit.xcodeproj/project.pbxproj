@@ -290,6 +290,7 @@
 		36E9CD001DD6EEF5003597CE /* QueueFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E9CCFE1DD6EEF5003597CE /* QueueFactory.swift */; };
 		36E9CD041DD6F0DE003597CE /* Resolver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 360F392B1DD2068E002BED59 /* Resolver.framework */; };
 		36E9CD051DD6F0DE003597CE /* Resolver.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 360F392B1DD2068E002BED59 /* Resolver.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AB300BA71F069FF700ECA04F /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB300BA61F069FF700ECA04F /* SwiftyJSON.framework */; };
 		ABD89B771F06562700056F1E /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD89B761F06562700056F1E /* Logger.swift */; };
 		ABD89B781F06562700056F1E /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD89B761F06562700056F1E /* Logger.swift */; };
 /* End PBXBuildFile section */
@@ -560,6 +561,7 @@
 		36DB3CEE1E0D610500D907DB /* IPAddressSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IPAddressSpec.swift; sourceTree = "<group>"; };
 		36E44A011CF2ED4800185DBF /* TUNInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TUNInterface.swift; sourceTree = "<group>"; };
 		36E9CCFE1DD6EEF5003597CE /* QueueFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QueueFactory.swift; path = Tunnel/QueueFactory.swift; sourceTree = "<group>"; };
+		AB300BA61F069FF700ECA04F /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "../SwiftyJSON/build/Debug-iphoneos/SwiftyJSON.framework"; sourceTree = "<group>"; };
 		ABD89B761F06562700056F1E /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -621,6 +623,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB300BA71F069FF700ECA04F /* SwiftyJSON.framework in Frameworks */,
 				360F392F1DD20774002BED59 /* Resolver.framework in Frameworks */,
 				36C4B7D21D6C508100F2BDCD /* CocoaAsyncSocket.framework in Frameworks */,
 				36C4B7D31D6C508100F2BDCD /* CocoaLumberjack.framework in Frameworks */,
@@ -639,6 +642,7 @@
 		360F392A1DD2068D002BED59 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AB300BA61F069FF700ECA04F /* SwiftyJSON.framework */,
 				36C48D9B1CF9483F0071804F /* iOS */,
 				36C48D9C1CF948500071804F /* macOS */,
 			);
