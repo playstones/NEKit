@@ -49,7 +49,7 @@ class HTTPStreamScanner {
             }
             
             currentHeader = header
-            
+            Logger.share.log(message: header.toString())
             setNextAction()
             
             return .header(header)

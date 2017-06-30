@@ -290,6 +290,8 @@
 		36E9CD001DD6EEF5003597CE /* QueueFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E9CCFE1DD6EEF5003597CE /* QueueFactory.swift */; };
 		36E9CD041DD6F0DE003597CE /* Resolver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 360F392B1DD2068E002BED59 /* Resolver.framework */; };
 		36E9CD051DD6F0DE003597CE /* Resolver.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 360F392B1DD2068E002BED59 /* Resolver.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		ABD89B771F06562700056F1E /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD89B761F06562700056F1E /* Logger.swift */; };
+		ABD89B781F06562700056F1E /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD89B761F06562700056F1E /* Logger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -558,6 +560,7 @@
 		36DB3CEE1E0D610500D907DB /* IPAddressSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IPAddressSpec.swift; sourceTree = "<group>"; };
 		36E44A011CF2ED4800185DBF /* TUNInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TUNInterface.swift; sourceTree = "<group>"; };
 		36E9CCFE1DD6EEF5003597CE /* QueueFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QueueFactory.swift; path = Tunnel/QueueFactory.swift; sourceTree = "<group>"; };
+		ABD89B761F06562700056F1E /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -790,6 +793,7 @@
 				3664F0BD1CE3069F008BA6D8 /* Opt.swift */,
 				36B162241CDDA0EA00F24C97 /* Utils.swift */,
 				3621B9481DFA92480003ABB3 /* GlobalIntializer.swift */,
+				ABD89B761F06562700056F1E /* Logger.swift */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -1508,6 +1512,7 @@
 				36E44A021CF2ED4800185DBF /* TUNInterface.swift in Sources */,
 				36A719F71D64078800DC35F5 /* ObserverFactory.swift in Sources */,
 				36A719F21D634EA600DC35F5 /* Observer.swift in Sources */,
+				ABD89B771F06562700056F1E /* Logger.swift in Sources */,
 				3650FAEE1D27C8A900444E79 /* CCCrypto.swift in Sources */,
 				36A503F91CF5D27E00D1FC78 /* DirectProxySocket.swift in Sources */,
 				36B162271CDDA0EA00F24C97 /* GCDTCPSocket.swift in Sources */,
@@ -1626,6 +1631,7 @@
 				36C48D7C1CF88EDA0071804F /* RuleManager.swift in Sources */,
 				36A719F81D64078800DC35F5 /* ObserverFactory.swift in Sources */,
 				36A719F31D634EA600DC35F5 /* Observer.swift in Sources */,
+				ABD89B781F06562700056F1E /* Logger.swift in Sources */,
 				3650FAEF1D27C8A900444E79 /* CCCrypto.swift in Sources */,
 				36C48D611CF88EB60071804F /* SecureHTTPAdapter.swift in Sources */,
 				36C48D721CF88ECF0071804F /* GCDProxyServer.swift in Sources */,
