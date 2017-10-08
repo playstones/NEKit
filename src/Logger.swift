@@ -6,7 +6,7 @@
 //  Copyright © 2017年 Zhuhao Wang. All rights reserved.
 //
 
-import UIKit
+//import UIKit
 
 public protocol LoggerDelegate {
     func recerved(log :String)
