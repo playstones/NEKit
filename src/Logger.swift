@@ -5,8 +5,8 @@
 //  Created by lei on 2017/6/27.
 //  Copyright © 2017年 Zhuhao Wang. All rights reserved.
 //
+import Foundation
 
-//import UIKit
 
 public protocol LoggerDelegate {
     func recerved(log :String)
